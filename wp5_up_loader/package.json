@@ -1,0 +1,17 @@
+{
+  "name": "wp5_up_loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "loader-utils": "^2.0.0",
+    "schema-utils": "^3.0.0"
+  }
+}

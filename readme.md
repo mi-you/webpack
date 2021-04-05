@@ -16,3 +16,20 @@
 - 5_20_26:在5_1_17基础上进行,增加一些配置参数
 - 5_27_28:pwa和多线程打包
 - 5_29_end:dll
+## wp5
+- [B站学习视频](https://www.bilibili.com/video/BV1cv411C74F)
+- wp5_up_react
+  ```
+  create-react-app wp5_up_react
+  npm run eject
+  ```
+- wp5_up_vue
+  ```
+  vue create wp5_up_vue
+  vue inspect --mode=development > webpack.dev.js
+  vue inspect --mode=production > webpack.prod.js 
+  ```
+- wp5_up_loader
+  - loader本质是函数，会被webpack调用
+- wp5_up_plugin
+  - 终止于 P<sub>18</sub>
