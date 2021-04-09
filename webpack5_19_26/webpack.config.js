@@ -257,9 +257,15 @@ module.exports = {
     2.可以将node_modules中的代码单独打包一个chunk最终输出如下optimization
       自动分析多入口chunk中有没有公共文件，如果有会打包成单独一个chunk
   */
-  optimization:{
+  optimization:{ 
     splitChunks:{
       chunks:'all'
+    },
+    /*
+      生成映射文件抽取映射关系成单独文件，以便在内嵌引用时防止外层文件修改（内层hash改变影响外层导致外层不能被有效缓存）
+    */ 
+    runtimeChunk:{
+      name: (entrypoint) => `runtime~${entrypoint.name}`
     }
   }
 }
